@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+       
+         
+    </style>
+</head>
+<body>
+    <h1>Cricket Game</h1>
+    
+    <button onclick="
+    let r = Math.random()*3;
+    let compChoice ;
+    if(r>0 && r<=1){
+        compChoice = 'Bat';
+
+    }
+    else if(r>1 && r<=2){
+        compChoice = 'Ball';
+    }
+    else{
+        compChoice = 'Stump';
+    }
+
+    let res ;
+    if(compChoice === 'Ball'){
+        res = 'YOU WON';
+    }
+    else if(compChoice === 'Bat'){
+        res = 'IT IS TIE';
+    }
+    else{
+        res = 'YOU LOSE';
+    }
+
+    alert(`You have chosen Bat . Computer choice is ${compChoice} and ${res}`);
+
+
+    "> Bat</button>
+
+
+    <button onclick="
+
+    r = Math.random()*3;
+   
+    if(r>0 && r<=1){
+        compChoice = 'Bat';
+
+    }
+    else if(r>1 && r<=2){
+        compChoice = 'Ball';
+    }
+    else{
+        compChoice = 'Stump';
+    }
+
+   
+    if(compChoice === 'Ball'){
+        res = 'IT IS TIE';
+    }
+    else if(compChoice === 'Bat'){
+        res = 'YOU LOSE';
+    }
+    else{
+        res = 'YOU WON';
+    }
+
+    alert(`You have chosen Ball . Computer choice is ${compChoice} and ${res}`);
+    
+    "> Ball</button>
+
+
+
+    <!-- Stump -->
+    <button onclick="
+    r = Math.random()*3;
+   
+   if(r>0 && r<=1){
+       compChoice = 'Bat';
+
+   }
+   else if(r>1 && r<=2){
+       compChoice = 'Ball';
+   }
+   else{
+       compChoice = 'Stump';
+   }
+
+  
+   if(compChoice === 'Stump'){
+       res = 'IT IS TIE';
+   }
+   else if(compChoice === 'Bat'){
+       res = 'YOU WON';
+   }
+   else{
+       res = 'YOU LOSE';
+   }
+
+   alert(`You have chosen Stump . Computer choice is ${compChoice} and ${res}`);
+    "> Stump</button>
+</body>
+</html>
